@@ -10,6 +10,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 class Submission extends Model
 {
     use HasFactory;
+    protected $fillable = ['type', 'attachment', 'user_id', 'status_id'];
 
     public function submitter(): BelongsTo
     {

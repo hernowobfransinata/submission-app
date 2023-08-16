@@ -4,7 +4,7 @@
     <section class="py-6">
         <div class="max-w-md mx-auto p-6 bg-white rounded-lg shadow-lg">
             <h2 class="text-2xl font-semibold mb-4">Create Submission</h2>
-            <form action="submissions" method="POST" enctype="multipart/form-data">
+            <form action="/submissions" method="POST" enctype="multipart/form-data">
                 @csrf
                 <div class="mb-4">
                     <label for="type" class="block text-gray-700 text-sm font-medium mb-1">Type</label>

@@ -27,6 +27,7 @@ Route::post('logout', [SessionController::class, 'destroy'])->middleware('auth')
 
 Route::get('submissions/create', [SubmissionController::class, 'create']);
 Route::post('submissions', [SubmissionController::class, 'store']);
+Route::get('submissions/{id}', [SubmissionController::class, 'show']);
 
 Route::get('/form', function () {
     return view('form');
